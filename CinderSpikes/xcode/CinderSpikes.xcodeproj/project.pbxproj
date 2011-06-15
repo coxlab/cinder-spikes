@@ -18,6 +18,10 @@
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
+		5C6448A713A93E080056AA53 /* GLStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488913A93E080056AA53 /* GLStringRenderer.cpp */; };
+		5C6448A813A93E080056AA53 /* SpikeRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */; };
+		5C6448A913A93E080056AA53 /* SpikeWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488D13A93E080056AA53 /* SpikeWave.cpp */; };
+		5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,14 @@
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		5C64488913A93E080056AA53 /* GLStringRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLStringRenderer.cpp; sourceTree = "<group>"; };
+		5C64488A13A93E080056AA53 /* GLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStringRenderer.h; sourceTree = "<group>"; };
+		5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeRenderer.cpp; sourceTree = "<group>"; };
+		5C64488C13A93E080056AA53 /* SpikeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeRenderer.h; sourceTree = "<group>"; };
+		5C64488D13A93E080056AA53 /* SpikeWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeWave.cpp; sourceTree = "<group>"; };
+		5C64488E13A93E080056AA53 /* SpikeWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeWave.h; sourceTree = "<group>"; };
+		5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CinderStringRenderer.cpp; sourceTree = "<group>"; };
+		5C6448AC13A946D50056AA53 /* CinderStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderStringRenderer.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CinderSpikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderSpikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,7 +78,10 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5C64486413A93E080056AA53 /* spike-visualization */,
 				00BAE6590E7ED9C10018A608 /* CinderSpikesApp.cpp */,
+				5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */,
+				5C6448AC13A946D50056AA53 /* CinderStringRenderer.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -144,6 +159,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C64486413A93E080056AA53 /* spike-visualization */ = {
+			isa = PBXGroup;
+			children = (
+				5C64488913A93E080056AA53 /* GLStringRenderer.cpp */,
+				5C64488A13A93E080056AA53 /* GLStringRenderer.h */,
+				5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */,
+				5C64488C13A93E080056AA53 /* SpikeRenderer.h */,
+				5C64488D13A93E080056AA53 /* SpikeWave.cpp */,
+				5C64488E13A93E080056AA53 /* SpikeWave.h */,
+			);
+			name = "spike-visualization";
+			path = "../../spike-visualization";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -204,6 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00BAE65A0E7ED9C10018A608 /* CinderSpikesApp.cpp in Sources */,
+				5C6448A713A93E080056AA53 /* GLStringRenderer.cpp in Sources */,
+				5C6448A813A93E080056AA53 /* SpikeRenderer.cpp in Sources */,
+				5C6448A913A93E080056AA53 /* SpikeWave.cpp in Sources */,
+				5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,8 +255,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CinderSpikes_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
 				PRODUCT_NAME = CinderSpikes;
 				WRAPPER_EXTENSION = app;
@@ -243,8 +279,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = CinderSpikes_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = 4.2;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
 				PRODUCT_NAME = CinderSpikes;
 				STRIP_INSTALLED_PRODUCT = YES;
