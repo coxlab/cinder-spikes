@@ -15,7 +15,7 @@ using namespace ci;
 using namespace ci::gl;
 
 
-class CinderStringRenderer {
+class CinderStringRenderer : public GLStringRenderer {
 
     public:
 

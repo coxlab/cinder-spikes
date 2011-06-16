@@ -11,8 +11,13 @@ using namespace ci::app;
 using namespace std;
 using namespace spike_visualization;
 
+// must match audio unit
+#define PRE_TRIGGER     33
+#define POST_TRIGGER    33
+
 typedef boost::shared_ptr<SpikeRenderer> SpikeRendererPtr;
 typedef boost::shared_ptr<zmq::socket_t> SocketPtr;
+typedef boost::shared_ptr<GLSpikeWave> GLSpikeWavePtr;
 
 class CinderSpikesApp : public AppBasic {
 
@@ -132,7 +137,7 @@ void CinderSpikesApp::update()
                 data_buffer[i] = wave.wave_sample(i);
             }
             
-            shared_ptr<GLSpikeWave> gl_wave(new GLSpikeWave(PRE_TRIGGER+POST_TRIGGER, -PRE_TRIGGER/44100., 1.0/44100., data_buffer));
+            GLSpikeWavePtr gl_wave(new GLSpikeWave(PRE_TRIGGER+POST_TRIGGER, -PRE_TRIGGER/44100., 1.0/44100., data_buffer));
             
             renderer->pushSpikeWave(gl_wave);
             
@@ -153,7 +158,7 @@ void CinderSpikesApp::draw()
     for(int c = start_channel; c < end_channel; c++){
     
         SpikeRendererPtr renderer = spike_renderers[c];
-        renderer->draw();
+        renderer->render();
     }
     
 }
