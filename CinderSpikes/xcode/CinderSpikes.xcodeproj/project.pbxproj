@@ -376,6 +376,8 @@
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -393,8 +395,8 @@
 				OTHER_LDFLAGS = (
 					"-lzmq",
 					"-lprotobuf",
-					"\"../../../../external/Cinder/lib/libcinder_d.a\"",
-					"\"../../../../external/Cinder/lib/macosx/libboost_system.a\"",
+					"\"../../../../external/cinder_0.8.2_mac/lib/libcinder_d.a\"",
+					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_system.a\"",
 				);
 				PRODUCT_NAME = CinderSpikes;
 				WRAPPER_EXTENSION = app;
@@ -404,6 +406,8 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_FAST_MATH = YES;
@@ -423,6 +427,8 @@
 					"-lzmq",
 					"-lprotobuf",
 					"\"../../../../external/Cinder/lib/libcinder.a\"",
+					"\"../../../../external/Cinder/lib/macosx/libboost_system.a\"",
+					"\"../../../../external/Cinder/lib/macosx/libboost_filesystem.a\"",
 				);
 				PRODUCT_NAME = CinderSpikes;
 				STRIP_INSTALLED_PRODUCT = YES;
@@ -434,9 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
-				CINDER_PATH = ../../../../external/Cinder;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				CINDER_PATH = ../../../../external/cinder_0.8.2_mac;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
@@ -451,9 +457,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
-				CINDER_PATH = ../../../../external/Cinder;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				CINDER_PATH = ../../../../external/cinder_0.8.2_mac;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
@@ -474,6 +480,7 @@
 				5C732C7913A98E5A0012B28D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C732C8E13A991850012B28D /* Build configuration list for PBXAggregateTarget "All" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				5C732C9013A991850012B28D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderSpikes" */ = {
 			isa = XCConfigurationList;

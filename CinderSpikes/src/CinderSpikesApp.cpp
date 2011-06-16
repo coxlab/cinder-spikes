@@ -25,30 +25,45 @@ class CinderSpikesApp : public AppBasic {
   
     vector<SpikeRendererPtr> spike_renderers;
     vector<SocketPtr> spike_sockets;
+    zmq::context_t message_ctx;
     
     // layout of the spike channels per "page"
     unsigned int rows, cols, n_pages;
+    unsigned int n_channels;
     
     // the current "page" of spike channels that we're on
     int current_page; 
 
+    void connectSocketToSpikeChannel(SocketPtr, int);
+
 
   public:
+    CinderSpikesApp() : message_ctx(1), current_page(0) { }
+  
 	void setup();
 	void mouseDown( MouseEvent event );	
 	void update();
 	void draw();
 };
 
+void CinderSpikesApp::connectSocketToSpikeChannel(SocketPtr socket, int channel)
+{
+
+    //TODO
+
+}
+
 void CinderSpikesApp::setup()
 {
 
-    int n_channels = 32; // hard-code for now
-    int rows = 4;
-    int cols = 4;
+    n_channels = 32; // hard-code for now
+    rows = 4;
+    cols = 4;
+    
+    
 
-    GLfloat plot_width = 100.0; // for now
-    GLfloat plot_height = 100.0;
+    GLfloat plot_width = 400.0; // for now
+    GLfloat plot_height = 400.0;
     double min_ampl = -0.099;
     double max_ampl = 0.099;
     double min_time = -0.00125;
@@ -61,12 +76,14 @@ void CinderSpikesApp::setup()
     // appropriate offsets
     int r, c, p;
     
-    for(int c = 0; c < n_channels; c++){
+    for(int ch = 0; ch < n_channels; ch++){
         
         GLfloat offset_y = r * plot_width;
         GLfloat offset_x = c * plot_height;
         
-
+        SocketPtr spike_socket( new zmq::socket_t(message_ctx, ZMQ_SUB) );
+        connectSocketToSpikeChannel(spike_socket, ch);
+        spike_sockets.push_back(spike_socket);
         
         SpikeRendererPtr renderer( new SpikeRenderer(min_ampl,
                                                      max_ampl,

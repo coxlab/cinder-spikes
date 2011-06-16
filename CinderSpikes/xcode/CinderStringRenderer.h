@@ -33,6 +33,6 @@ class CinderStringRenderer : public GLStringRenderer {
             Texture tex(surf);
             tex.setDoNotDispose();
             
-            return tex.getId();
+            return tex.getTextureId();
         }
 };
