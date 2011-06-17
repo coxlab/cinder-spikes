@@ -21,17 +21,31 @@ class CinderStringRenderer : public GLStringRenderer {
 
         virtual GLuint stringToTexture(std::string str, float font_size,float *width, float *height){
 
-            Font f("Helvetica", font_size);
-            Color c(1.0, 1.0, 1.0);
+            Font f("Helvetica", font_size * 2.5);
+            Color text_color(0.6, 0.6, 0.6);
+            Color bg_color(0.0, 0.0, 0.0);
         
             TextLayout t = TextLayout();
-            t.addLine(str);            
+            
+            t.setBorder(3,3);
+            t.clear(bg_color);   
+            t.setColor(text_color);
             t.setFont(f);
-            t.setColor(c);
+
+            t.addLine(str);
+                     
+            
+            
+            
             
             Surface surf = t.render();
-            Texture tex(surf);
+            Texture::Format fmt;
+            fmt.setTargetRect();
+            Texture tex(surf, fmt);
             tex.setDoNotDispose();
+            
+            *width = surf.getWidth();
+            *height = surf.getHeight();
             
             return tex.getTextureId();
         }

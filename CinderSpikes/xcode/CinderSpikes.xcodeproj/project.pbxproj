@@ -50,6 +50,9 @@
 		5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */; };
 		5C732C9A13A992BD0012B28D /* ctl_message.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C732C9613A992BD0012B28D /* ctl_message.pb.cc */; };
 		5C732C9B13A992BD0012B28D /* spike_wave.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C732C9813A992BD0012B28D /* spike_wave.pb.cc */; };
+		5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */; };
+		5CBED00213ABAD0E00CEEB19 /* ctl_message.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */; };
+		5CBED00313ABAD0E00CEEB19 /* spike_wave.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +102,10 @@
 		5C732C9713A992BD0012B28D /* ctl_message.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctl_message.pb.h; sourceTree = "<group>"; };
 		5C732C9813A992BD0012B28D /* spike_wave.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike_wave.pb.cc; sourceTree = "<group>"; };
 		5C732C9913A992BD0012B28D /* spike_wave.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spike_wave.pb.h; sourceTree = "<group>"; };
+		5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeChannelController.cpp; sourceTree = "<group>"; };
+		5CBECFF713ABA7F600CEEB19 /* SpikeChannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeChannelController.h; sourceTree = "<group>"; };
+		5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctl_message.proto; sourceTree = "<group>"; };
+		5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spike_wave.proto; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CinderSpikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderSpikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -211,12 +218,16 @@
 		5C64486413A93E080056AA53 /* spike-visualization */ = {
 			isa = PBXGroup;
 			children = (
+				5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */,
+				5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */,
 				5C64488913A93E080056AA53 /* GLStringRenderer.cpp */,
 				5C64488A13A93E080056AA53 /* GLStringRenderer.h */,
 				5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */,
 				5C64488C13A93E080056AA53 /* SpikeRenderer.h */,
 				5C64488D13A93E080056AA53 /* SpikeWave.cpp */,
 				5C64488E13A93E080056AA53 /* SpikeWave.h */,
+				5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */,
+				5CBECFF713ABA7F600CEEB19 /* SpikeChannelController.h */,
 			);
 			name = "spike-visualization";
 			path = "../../spike-visualization";
@@ -293,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
+				5CBED00213ABAD0E00CEEB19 /* ctl_message.proto in Resources */,
+				5CBED00313ABAD0E00CEEB19 /* spike_wave.proto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +339,7 @@
 				5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */,
 				5C732C9A13A992BD0012B28D /* ctl_message.pb.cc in Sources */,
 				5C732C9B13A992BD0012B28D /* spike_wave.pb.cc in Sources */,
+				5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
