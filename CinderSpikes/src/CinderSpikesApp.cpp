@@ -36,12 +36,17 @@ class CinderSpikesApp : public AppBasic {
                            GLfloat *plot_width, GLfloat *plot_height);
 
   public:
-    CinderSpikesApp() : current_page(0) { }
+    CinderSpikesApp() : current_page(0),
+                        n_channels(2), // hard-code for now
+                        rows(2),
+                        cols(2)
+    { }
   
 	void setup();
 	void mouseDown( MouseEvent event );
     void mouseUp( MouseEvent event );	
     void mouseDrag( MouseEvent event );
+    void mouseWheel( MouseEvent event );
 	void update();
 	void draw();
     void prepareSettings( Settings *settings);
@@ -50,7 +55,7 @@ class CinderSpikesApp : public AppBasic {
 
 
 void CinderSpikesApp::prepareSettings( Settings *settings ){
-    settings->setWindowSize( 1600, 768 );
+    settings->setWindowSize( 200*cols, 160*rows );
     settings->setFrameRate( 30.0f );
 }
       
@@ -60,7 +65,7 @@ void CinderSpikesApp::computePlotDimensions(int r, int c,
 
     float width = getWindowWidth() / cols;
     float height = getWindowHeight() / rows;
-    *offset_y = r * height;
+    *offset_y = (rows - r - 1) * height;
     *offset_x = c * width;
     *plot_width = width;
     *plot_height = height;
@@ -69,9 +74,6 @@ void CinderSpikesApp::computePlotDimensions(int r, int c,
 void CinderSpikesApp::setup()
 {
 
-    n_channels = 32; // hard-code for now
-    rows = 4;
-    cols = 8;
     
 
     double min_ampl = -0.099;
@@ -141,10 +143,12 @@ void CinderSpikesApp::update()
 void CinderSpikesApp::draw()
 {
 	// clear out the window with black
-	gl::clear( Color( 0, 0, 0 ) ); 
+    //gl::setMatricesWindow( getWindowSize() );
+    gl::clear( Color( 0, 0, 0 ) ); 
     
     int start_channel = rows*cols*current_page;
     int end_channel = start_channel + rows*cols;
+    if(end_channel > n_channels) end_channel = n_channels;
     
     for(int ch = start_channel; ch < end_channel; ch++){
         
@@ -168,6 +172,7 @@ void CinderSpikesApp::mouseDown( MouseEvent event )
 
     int start_channel = rows*cols*current_page;
     int end_channel = start_channel + rows*cols;
+    if(end_channel > n_channels) end_channel = n_channels;
     
     float x = (float)event.getX();
     float y = getWindowHeight() - (float)event.getY();
@@ -184,6 +189,7 @@ void CinderSpikesApp::mouseUp( MouseEvent event )
 
     int start_channel = rows*cols*current_page;
     int end_channel = start_channel + rows*cols;
+    if(end_channel > n_channels) end_channel = n_channels;
     
     float x = (float)event.getX();
     float y = getWindowHeight() - (float)event.getY();
@@ -199,6 +205,7 @@ void CinderSpikesApp::mouseDrag( MouseEvent event )
 
     int start_channel = rows*cols*current_page;
     int end_channel = start_channel + rows*cols;
+    if(end_channel > n_channels) end_channel = n_channels;
     
     float x = (float)event.getX();
     float y = getWindowHeight() - (float)event.getY();
@@ -206,6 +213,21 @@ void CinderSpikesApp::mouseDrag( MouseEvent event )
     for(int ch = start_channel; ch < end_channel; ch++){
         SpikeChannelControllerPtr controller = spike_controllers[ch];
         controller->mouseDragged(x, y);
+    }
+}
+
+void CinderSpikesApp::mouseWheel( MouseEvent event )
+{
+    
+    int start_channel = rows*cols*current_page;
+    int end_channel = start_channel + rows*cols;
+    if(end_channel > n_channels) end_channel = n_channels;
+    
+    float delta = event.getWheelIncrement();
+    
+    for(int ch = start_channel; ch < end_channel; ch++){
+        SpikeChannelControllerPtr controller = spike_controllers[ch];
+        controller->scrollWheel(delta);
     }
 }
 
