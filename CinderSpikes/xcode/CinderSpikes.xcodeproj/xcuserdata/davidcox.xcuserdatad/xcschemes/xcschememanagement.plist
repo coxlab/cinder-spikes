@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>CocoaGLText.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>generate_protocol_buffers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>5C732C8D13A991850012B28D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CBED02513AFCEC500CEEB19</key>
 		<dict>
 			<key>primary</key>
 			<true/>

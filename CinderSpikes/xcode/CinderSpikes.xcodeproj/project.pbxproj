@@ -53,6 +53,14 @@
 		5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */; };
 		5CBED00213ABAD0E00CEEB19 /* ctl_message.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */; };
 		5CBED00313ABAD0E00CEEB19 /* spike_wave.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */; };
+		5CBED02813AFCEC500CEEB19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBED02713AFCEC500CEEB19 /* Cocoa.framework */; };
+		5CBED02E13AFCEC500CEEB19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */; };
+		5CBED03313AFCECD00CEEB19 /* CocoaGLString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */; };
+		5CBED03413AFCED100CEEB19 /* CocoaGLStringRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */; };
+		5CBED03513AFCF0B00CEEB19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		5CBED03613AFCF1500CEEB19 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		5CBED03C13AFD0C500CEEB19 /* CocoaGLString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */; };
+		5CBED03D13AFD0C500CEEB19 /* CocoaGLStringRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,11 +114,30 @@
 		5CBECFF713ABA7F600CEEB19 /* SpikeChannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeChannelController.h; sourceTree = "<group>"; };
 		5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctl_message.proto; sourceTree = "<group>"; };
 		5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spike_wave.proto; sourceTree = "<group>"; };
+		5CBED01B13AFCE3F00CEEB19 /* CocoaGLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLString.h; sourceTree = "<group>"; };
+		5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLString.mm; sourceTree = "<group>"; };
+		5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLStringRenderer.mm; sourceTree = "<group>"; };
+		5CBED01E13AFCE3F00CEEB19 /* CocoaGLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLStringRenderer.h; sourceTree = "<group>"; };
+		5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaGLText.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBED02713AFCEC500CEEB19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5CBED02B13AFCEC500CEEB19 /* CocoaGLText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaGLText-Info.plist"; sourceTree = "<group>"; };
+		5CBED02D13AFCEC500CEEB19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5CBED02F13AFCEC500CEEB19 /* CocoaGLText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaGLText-Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CinderSpikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderSpikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5CBED02313AFCEC500CEEB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBED02813AFCEC500CEEB19 /* Cocoa.framework in Frameworks */,
+				5CBED03513AFCF0B00CEEB19 /* Cocoa.framework in Frameworks */,
+				5CBED03613AFCF1500CEEB19 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* CinderSpikes.app */,
+				5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +211,7 @@
 				29B97315FDCFA39411CA2CEA /* Headers */,
 				080E96DDFE201D6D7F000001 /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				5CBED02913AFCEC500CEEB19 /* CocoaGLText */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -210,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				5CBED02713AFCEC500CEEB19 /* Cocoa.framework */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -247,15 +277,63 @@
 		5C732C9C13A995F50012B28D /* accessory classes */ = {
 			isa = PBXGroup;
 			children = (
+				5CBED01A13AFCE3F00CEEB19 /* cocoa_gl_text */,
 				5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */,
 				5C6448AC13A946D50056AA53 /* CinderStringRenderer.h */,
 			);
 			name = "accessory classes";
 			sourceTree = "<group>";
 		};
+		5CBED01A13AFCE3F00CEEB19 /* cocoa_gl_text */ = {
+			isa = PBXGroup;
+			children = (
+				5CBED01B13AFCE3F00CEEB19 /* CocoaGLString.h */,
+				5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */,
+				5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */,
+				5CBED01E13AFCE3F00CEEB19 /* CocoaGLStringRenderer.h */,
+			);
+			name = cocoa_gl_text;
+			path = ../../cocoa_gl_text;
+			sourceTree = "<group>";
+		};
+		5CBED02913AFCEC500CEEB19 /* CocoaGLText */ = {
+			isa = PBXGroup;
+			children = (
+				5CBED02A13AFCEC500CEEB19 /* Supporting Files */,
+			);
+			path = CocoaGLText;
+			sourceTree = "<group>";
+		};
+		5CBED02A13AFCEC500CEEB19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CBED02B13AFCEC500CEEB19 /* CocoaGLText-Info.plist */,
+				5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */,
+				5CBED02F13AFCEC500CEEB19 /* CocoaGLText-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5CBED02513AFCEC500CEEB19 /* CocoaGLText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CBED03013AFCEC500CEEB19 /* Build configuration list for PBXNativeTarget "CocoaGLText" */;
+			buildPhases = (
+				5CBED02213AFCEC500CEEB19 /* Sources */,
+				5CBED02313AFCEC500CEEB19 /* Frameworks */,
+				5CBED02413AFCEC500CEEB19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaGLText;
+			productName = CocoaGLText;
+			productReference = 5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		8D1107260486CEB800E47090 /* CinderSpikes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderSpikes" */;
@@ -294,11 +372,20 @@
 				8D1107260486CEB800E47090 /* CinderSpikes */,
 				5C732C7713A98E5A0012B28D /* generate_protocol_buffers */,
 				5C732C8D13A991850012B28D /* All */,
+				5CBED02513AFCEC500CEEB19 /* CocoaGLText */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5CBED02413AFCEC500CEEB19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBED02E13AFCEC500CEEB19 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +415,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5CBED02213AFCEC500CEEB19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CBED03313AFCECD00CEEB19 /* CocoaGLString.mm in Sources */,
+				5CBED03413AFCED100CEEB19 /* CocoaGLStringRenderer.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +436,8 @@
 				5C732C9A13A992BD0012B28D /* ctl_message.pb.cc in Sources */,
 				5C732C9B13A992BD0012B28D /* spike_wave.pb.cc in Sources */,
 				5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */,
+				5CBED03C13AFD0C500CEEB19 /* CocoaGLString.mm in Sources */,
+				5CBED03D13AFD0C500CEEB19 /* CocoaGLStringRenderer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +455,17 @@
 			targetProxy = 5C732C9313A9918F0012B28D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CBED02D13AFCEC500CEEB19 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5C732C7813A98E5A0012B28D /* Debug */ = {
@@ -384,6 +493,57 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5CBED03113AFCEC500CEEB19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaGLText/CocoaGLText-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "CocoaGLText/CocoaGLText-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5CBED03213AFCEC500CEEB19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CocoaGLText/CocoaGLText-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "CocoaGLText/CocoaGLText-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				VALID_ARCHS = i386;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -508,6 +668,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5CBED03013AFCEC500CEEB19 /* Build configuration list for PBXNativeTarget "CocoaGLText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CBED03113AFCEC500CEEB19 /* Debug */,
+				5CBED03213AFCEC500CEEB19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderSpikes" */ = {
 			isa = XCConfigurationList;

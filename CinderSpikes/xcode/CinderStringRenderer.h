@@ -17,15 +17,28 @@ using namespace ci::gl;
 
 class CinderStringRenderer : public GLStringRenderer {
 
+    protected:
+    
+        //TextLayout t;
+        Color text_color;
+        Color bg_color;
+        Font f;
+        Texture::Format fmt;
+    
     public:
+    
+        CinderStringRenderer():
+            text_color(0.6,0.6,0.6),
+            bg_color(0.0, 0.0, 0.0),
+            f("Helvetica", 6 * 2.5){
+            fmt.setTargetRect();
+            
+        }
+    
 
         virtual GLuint stringToTexture(std::string str, float font_size,float *width, float *height){
 
-            Font f("Helvetica", font_size * 2.5);
-            Color text_color(0.6, 0.6, 0.6);
-            Color bg_color(0.0, 0.0, 0.0);
-        
-            TextLayout t = TextLayout();
+            TextLayout t;
             
             t.setBorder(3,3);
             t.clear(bg_color);   
@@ -33,14 +46,9 @@ class CinderStringRenderer : public GLStringRenderer {
             t.setFont(f);
 
             t.addLine(str);
-                     
-            
-            
-            
-            
+             
             Surface surf = t.render();
-            Texture::Format fmt;
-            fmt.setTargetRect();
+//            
             Texture tex(surf, fmt);
             tex.setDoNotDispose();
             

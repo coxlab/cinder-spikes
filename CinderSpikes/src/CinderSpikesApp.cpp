@@ -2,8 +2,8 @@
 #include "cinder/gl/gl.h"
 
 #include "SpikeChannelController.h"
-#include "CinderStringRenderer.h"
-//#include "CocoaGLStringRenderer.h"
+//#include "CinderStringRenderer.h"
+#include "CocoaGLStringRenderer.h"
 #include <zmq.hpp>
 #include "spike_wave.pb.h"
 
@@ -102,8 +102,8 @@ void CinderSpikesApp::setup()
     double min_time = -0.00125;
     double max_time = 0.00125;
     
-    boost::shared_ptr<GLStringRenderer> str_renderer(new CinderStringRenderer());
-    //boost::shared_ptr<GLStringRenderer> str_renderer(new CocoaGLStringRenderer());
+    //boost::shared_ptr<GLStringRenderer> str_renderer(new CinderStringRenderer());
+    boost::shared_ptr<GLStringRenderer> str_renderer(new CocoaGLStringRenderer());
 
     // lay down spike renderers for each channel with 
     // appropriate offsets
