@@ -442,9 +442,9 @@
 				OTHER_LDFLAGS = (
 					"-lzmq",
 					"-lprotobuf",
-					"\"../../../../external/Cinder/lib/libcinder.a\"",
-					"\"../../../../external/Cinder/lib/macosx/libboost_system.a\"",
-					"\"../../../../external/Cinder/lib/macosx/libboost_filesystem.a\"",
+					"\"../../../../external/cinder_0.8.2_mac/lib/libcinder.a\"",
+					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_system.a\"",
+					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_filesystem.a\"",
 				);
 				PRODUCT_NAME = CinderSpikes;
 				STRIP_INSTALLED_PRODUCT = YES;
