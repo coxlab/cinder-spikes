@@ -164,7 +164,7 @@
 // basic methods that pick up defaults
 - (id) initWithAttributedString:(NSAttributedString *)attributedString;
 {
-	return [self initWithAttributedString:attributedString withTextColor:[NSColor colorWithDeviceRed:1.0f green:1.0f blue:1.0f alpha:1.0f] withBoxColor:[NSColor colorWithDeviceRed:1.0f green:1.0f blue:1.0f alpha:0.0f] withBorderColor:[NSColor colorWithDeviceRed:1.0f green:1.0f blue:1.0f alpha:0.0f]];
+	return [self initWithAttributedString:attributedString withTextColor:[NSColor colorWithDeviceRed:1.0f green:0.5f blue:1.0f alpha:1.0f] withBoxColor:[NSColor colorWithDeviceRed:1.0f green:1.0f blue:1.0f alpha:0.0f] withBorderColor:[NSColor colorWithDeviceRed:1.0f green:1.0f blue:1.0f alpha:0.0f]];
 }
 
 - (id) initWithString:(NSString *)aString withAttributes:(NSDictionary *)attribs
@@ -204,8 +204,11 @@
 		[path setLineWidth:1.0f];
 		[path stroke];
 	}
+        
+    [textColor set]; 
+    
+    
 	
-	[textColor set]; 
 	[string drawAtPoint:NSMakePoint (marginSize.width, marginSize.height)]; // draw at offset position
 	bitmap = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect (0.0f, 0.0f, frameSize.width, frameSize.height)];
 	[image unlockFocus];

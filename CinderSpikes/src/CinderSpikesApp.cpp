@@ -130,6 +130,10 @@ void CinderSpikesApp::setup()
         GLfloat offset_y, offset_x, plot_width, plot_height;
         computePlotDimensions(r,c, &offset_x, &offset_y, &plot_width, &plot_height);
         
+        int chan = ch;
+        if(channel_order != NULL){
+            chan = channel_order[ch] - 1;
+        }
 
         SpikeRendererPtr renderer( new SpikeRenderer(min_ampl,
                                                      max_ampl,
@@ -139,12 +143,10 @@ void CinderSpikesApp::setup()
                                                      plot_height,
                                                      offset_x,
                                                      offset_y,
-                                                     str_renderer) );
+                                                     str_renderer,
+                                                     chan+1) );
 
-        int chan = ch;
-        if(channel_order != NULL){
-            chan = channel_order[ch] - 1;
-        }
+        
         SpikeChannelControllerPtr controller( new SpikeChannelController(chan, renderer) );
                                                                           
         spike_controllers.push_back(controller);
