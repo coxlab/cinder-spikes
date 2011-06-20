@@ -19,10 +19,13 @@ using namespace spike_visualization;
 
 // Hard-coded stuff (for now)
 // should eventually go in some kind of conf file
-#define N_CHANNELS  12
-#define ROWS        2
-#define COLS        3
-const int hard_coded_channel_order[N_CHANNELS] = {0,1,2,3,4,5,6,7,8,9,10,11};
+#define N_CHANNELS  32
+#define ROWS        4
+#define COLS        4
+const int hard_coded_channel_order[N_CHANNELS] = {7, 10,1, 14,5, 12,3, 11,
+                                                  2, 16,22,15,4, 9, 18,28,
+                                                  6, 13,21,27,8, 32,17,31,
+                                                  24,26,20,30,23,25,19,29};
 
 
 class CinderSpikesApp : public AppBasic {
@@ -140,7 +143,7 @@ void CinderSpikesApp::setup()
 
         int chan = ch;
         if(channel_order != NULL){
-            chan = channel_order[ch];
+            chan = channel_order[ch] - 1;
         }
         SpikeChannelControllerPtr controller( new SpikeChannelController(chan, renderer) );
                                                                           
