@@ -6,32 +6,6 @@
 	objectVersion = 44;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		5C732C7713A98E5A0012B28D /* generate_protocol_buffers */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 5C732C7A13A98E5A0012B28D /* Build configuration list for PBXAggregateTarget "generate_protocol_buffers" */;
-			buildPhases = (
-				5C732C7C13A98E620012B28D /* ShellScript */,
-			);
-			dependencies = (
-			);
-			name = generate_protocol_buffers;
-			productName = generate_protocol_buffers;
-		};
-		5C732C8D13A991850012B28D /* All */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 5C732C8E13A991850012B28D /* Build configuration list for PBXAggregateTarget "All" */;
-			buildPhases = (
-			);
-			dependencies = (
-				5C732C9213A9918B0012B28D /* PBXTargetDependency */,
-				5C732C9413A9918F0012B28D /* PBXTargetDependency */,
-			);
-			name = All;
-			productName = All;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
 		0097E3E50F3E9819005A4392 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0097E3E40F3E9819005A4392 /* QuickTime.framework */; };
@@ -44,42 +18,19 @@
 		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
 		5323E6B60EAFCA7E003A9687 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B50EAFCA7E003A9687 /* QTKit.framework */; };
 		53E3CDFC0E86099300238D2B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3CDFB0E86099300238D2B /* Carbon.framework */; };
-		5C6448A713A93E080056AA53 /* GLStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488913A93E080056AA53 /* GLStringRenderer.cpp */; };
-		5C6448A813A93E080056AA53 /* SpikeRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */; };
-		5C6448A913A93E080056AA53 /* SpikeWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C64488D13A93E080056AA53 /* SpikeWave.cpp */; };
-		5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */; };
-		5C732C9A13A992BD0012B28D /* ctl_message.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C732C9613A992BD0012B28D /* ctl_message.pb.cc */; };
-		5C732C9B13A992BD0012B28D /* spike_wave.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C732C9813A992BD0012B28D /* spike_wave.pb.cc */; };
-		5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */; };
-		5CBED00213ABAD0E00CEEB19 /* ctl_message.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */; };
-		5CBED00313ABAD0E00CEEB19 /* spike_wave.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */; };
-		5CBED02813AFCEC500CEEB19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBED02713AFCEC500CEEB19 /* Cocoa.framework */; };
-		5CBED02E13AFCEC500CEEB19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */; };
-		5CBED03313AFCECD00CEEB19 /* CocoaGLString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */; };
-		5CBED03413AFCED100CEEB19 /* CocoaGLStringRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */; };
-		5CBED03513AFCF0B00CEEB19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		5CBED03613AFCF1500CEEB19 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
-		5CBED03C13AFD0C500CEEB19 /* CocoaGLString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */; };
-		5CBED03D13AFD0C500CEEB19 /* CocoaGLStringRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */; };
+		5C5DBDEC16CCFA1200991C5E /* ctl_message.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE016CCFA1200991C5E /* ctl_message.proto */; };
+		5C5DBDED16CCFA1200991C5E /* GLStringRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE116CCFA1200991C5E /* GLStringRenderer.cpp */; };
+		5C5DBDEE16CCFA1200991C5E /* spike_wave.proto in Resources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE316CCFA1200991C5E /* spike_wave.proto */; };
+		5C5DBDEF16CCFA1200991C5E /* SpikeChannelController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE416CCFA1200991C5E /* SpikeChannelController.cpp */; };
+		5C5DBDF016CCFA1200991C5E /* SpikeRenderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE616CCFA1200991C5E /* SpikeRenderer.cpp */; };
+		5C5DBDF116CCFA1200991C5E /* SpikeWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDE816CCFA1200991C5E /* SpikeWave.cpp */; };
+		5C5DBDF216CCFA1200991C5E /* SpikeWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDEB16CCFA1200991C5E /* SpikeWaveView.m */; };
+		5C5DBDF916CCFA3F00991C5E /* CocoaGLString.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDF616CCFA3F00991C5E /* CocoaGLString.mm */; };
+		5C5DBDFA16CCFA3F00991C5E /* CocoaGLStringRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBDF816CCFA3F00991C5E /* CocoaGLStringRenderer.mm */; };
+		5C5DBE0516CCFCEC00991C5E /* ctl_message.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBE0116CCFCEC00991C5E /* ctl_message.pb.cc */; };
+		5C5DBE0616CCFCEC00991C5E /* spike_wave.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5C5DBE0316CCFCEC00991C5E /* spike_wave.pb.cc */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C732C9113A9918B0012B28D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C732C7713A98E5A0012B28D;
-			remoteInfo = generate_protocol_buffers;
-		};
-		5C732C9313A9918F0012B28D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8D1107260486CEB800E47090;
-			remoteInfo = CinderSpikes;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
@@ -89,7 +40,7 @@
 		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		00BAE6590E7ED9C10018A608 /* CinderSpikesApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CinderSpikesApp.cpp; path = ../src/CinderSpikesApp.cpp; sourceTree = SOURCE_ROOT; };
-		00CCAF14116A9FEE008396D5 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = SOURCE_ROOT; };
+		00CCAF14116A9FEE008396D5 /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CinderApp.icns; sourceTree = SOURCE_ROOT; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
@@ -98,46 +49,31 @@
 		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		5323E6B50EAFCA7E003A9687 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		53E3CDFB0E86099300238D2B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
-		5C64488913A93E080056AA53 /* GLStringRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLStringRenderer.cpp; sourceTree = "<group>"; };
-		5C64488A13A93E080056AA53 /* GLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStringRenderer.h; sourceTree = "<group>"; };
-		5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeRenderer.cpp; sourceTree = "<group>"; };
-		5C64488C13A93E080056AA53 /* SpikeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeRenderer.h; sourceTree = "<group>"; };
-		5C64488D13A93E080056AA53 /* SpikeWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeWave.cpp; sourceTree = "<group>"; };
-		5C64488E13A93E080056AA53 /* SpikeWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeWave.h; sourceTree = "<group>"; };
-		5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CinderStringRenderer.cpp; sourceTree = "<group>"; };
-		5C6448AC13A946D50056AA53 /* CinderStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderStringRenderer.h; sourceTree = "<group>"; };
-		5C732C9613A992BD0012B28D /* ctl_message.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctl_message.pb.cc; sourceTree = "<group>"; };
-		5C732C9713A992BD0012B28D /* ctl_message.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctl_message.pb.h; sourceTree = "<group>"; };
-		5C732C9813A992BD0012B28D /* spike_wave.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike_wave.pb.cc; sourceTree = "<group>"; };
-		5C732C9913A992BD0012B28D /* spike_wave.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spike_wave.pb.h; sourceTree = "<group>"; };
-		5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeChannelController.cpp; sourceTree = "<group>"; };
-		5CBECFF713ABA7F600CEEB19 /* SpikeChannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeChannelController.h; sourceTree = "<group>"; };
-		5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctl_message.proto; sourceTree = "<group>"; };
-		5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spike_wave.proto; sourceTree = "<group>"; };
-		5CBED01B13AFCE3F00CEEB19 /* CocoaGLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLString.h; sourceTree = "<group>"; };
-		5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLString.mm; sourceTree = "<group>"; };
-		5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLStringRenderer.mm; sourceTree = "<group>"; };
-		5CBED01E13AFCE3F00CEEB19 /* CocoaGLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLStringRenderer.h; sourceTree = "<group>"; };
-		5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaGLText.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CBED02713AFCEC500CEEB19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		5CBED02B13AFCEC500CEEB19 /* CocoaGLText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CocoaGLText-Info.plist"; sourceTree = "<group>"; };
-		5CBED02D13AFCEC500CEEB19 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5CBED02F13AFCEC500CEEB19 /* CocoaGLText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CocoaGLText-Prefix.pch"; sourceTree = "<group>"; };
+		5C5DBDE016CCFA1200991C5E /* ctl_message.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ctl_message.proto; sourceTree = "<group>"; };
+		5C5DBDE116CCFA1200991C5E /* GLStringRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLStringRenderer.cpp; sourceTree = "<group>"; };
+		5C5DBDE216CCFA1200991C5E /* GLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStringRenderer.h; sourceTree = "<group>"; };
+		5C5DBDE316CCFA1200991C5E /* spike_wave.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spike_wave.proto; sourceTree = "<group>"; };
+		5C5DBDE416CCFA1200991C5E /* SpikeChannelController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeChannelController.cpp; sourceTree = "<group>"; };
+		5C5DBDE516CCFA1200991C5E /* SpikeChannelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeChannelController.h; sourceTree = "<group>"; };
+		5C5DBDE616CCFA1200991C5E /* SpikeRenderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeRenderer.cpp; sourceTree = "<group>"; };
+		5C5DBDE716CCFA1200991C5E /* SpikeRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeRenderer.h; sourceTree = "<group>"; };
+		5C5DBDE816CCFA1200991C5E /* SpikeWave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SpikeWave.cpp; sourceTree = "<group>"; };
+		5C5DBDE916CCFA1200991C5E /* SpikeWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeWave.h; sourceTree = "<group>"; };
+		5C5DBDEA16CCFA1200991C5E /* SpikeWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpikeWaveView.h; sourceTree = "<group>"; };
+		5C5DBDEB16CCFA1200991C5E /* SpikeWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpikeWaveView.m; sourceTree = "<group>"; };
+		5C5DBDF516CCFA3F00991C5E /* CocoaGLString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLString.h; sourceTree = "<group>"; };
+		5C5DBDF616CCFA3F00991C5E /* CocoaGLString.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLString.mm; sourceTree = "<group>"; };
+		5C5DBDF716CCFA3F00991C5E /* CocoaGLStringRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaGLStringRenderer.h; sourceTree = "<group>"; };
+		5C5DBDF816CCFA3F00991C5E /* CocoaGLStringRenderer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CocoaGLStringRenderer.mm; sourceTree = "<group>"; };
+		5C5DBE0116CCFCEC00991C5E /* ctl_message.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ctl_message.pb.cc; sourceTree = "<group>"; };
+		5C5DBE0216CCFCEC00991C5E /* ctl_message.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ctl_message.pb.h; sourceTree = "<group>"; };
+		5C5DBE0316CCFCEC00991C5E /* spike_wave.pb.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spike_wave.pb.cc; sourceTree = "<group>"; };
+		5C5DBE0416CCFCEC00991C5E /* spike_wave.pb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spike_wave.pb.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* CinderSpikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderSpikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5CBED02313AFCEC500CEEB19 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CBED02813AFCEC500CEEB19 /* Cocoa.framework in Frameworks */,
-				5CBED03513AFCF0B00CEEB19 /* Cocoa.framework in Frameworks */,
-				5CBED03613AFCF1500CEEB19 /* OpenGL.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,9 +97,9 @@
 		080E96DDFE201D6D7F000001 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5C732C9C13A995F50012B28D /* accessory classes */,
-				5C732C9513A991AB0012B28D /* generated */,
-				5C64486413A93E080056AA53 /* spike-visualization */,
+				5C5DBE0016CCFCDB00991C5E /* generated */,
+				5C5DBDF316CCFA2D00991C5E /* accessory classes */,
+				5C5DBDDF16CCFA1200991C5E /* spike-visualization */,
 				00BAE6590E7ED9C10018A608 /* CinderSpikesApp.cpp */,
 			);
 			name = Source;
@@ -200,7 +136,6 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* CinderSpikes.app */,
-				5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,7 +146,6 @@
 				29B97315FDCFA39411CA2CEA /* Headers */,
 				080E96DDFE201D6D7F000001 /* Source */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
-				5CBED02913AFCEC500CEEB19 /* CocoaGLText */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -239,105 +173,70 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
-				5CBED02713AFCEC500CEEB19 /* Cocoa.framework */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C64486413A93E080056AA53 /* spike-visualization */ = {
+		5C5DBDDF16CCFA1200991C5E /* spike-visualization */ = {
 			isa = PBXGroup;
 			children = (
-				5CBED00013ABAD0E00CEEB19 /* ctl_message.proto */,
-				5CBED00113ABAD0E00CEEB19 /* spike_wave.proto */,
-				5C64488913A93E080056AA53 /* GLStringRenderer.cpp */,
-				5C64488A13A93E080056AA53 /* GLStringRenderer.h */,
-				5C64488B13A93E080056AA53 /* SpikeRenderer.cpp */,
-				5C64488C13A93E080056AA53 /* SpikeRenderer.h */,
-				5C64488D13A93E080056AA53 /* SpikeWave.cpp */,
-				5C64488E13A93E080056AA53 /* SpikeWave.h */,
-				5CBECFF613ABA7F600CEEB19 /* SpikeChannelController.cpp */,
-				5CBECFF713ABA7F600CEEB19 /* SpikeChannelController.h */,
+				5C5DBDE016CCFA1200991C5E /* ctl_message.proto */,
+				5C5DBDE116CCFA1200991C5E /* GLStringRenderer.cpp */,
+				5C5DBDE216CCFA1200991C5E /* GLStringRenderer.h */,
+				5C5DBDE316CCFA1200991C5E /* spike_wave.proto */,
+				5C5DBDE416CCFA1200991C5E /* SpikeChannelController.cpp */,
+				5C5DBDE516CCFA1200991C5E /* SpikeChannelController.h */,
+				5C5DBDE616CCFA1200991C5E /* SpikeRenderer.cpp */,
+				5C5DBDE716CCFA1200991C5E /* SpikeRenderer.h */,
+				5C5DBDE816CCFA1200991C5E /* SpikeWave.cpp */,
+				5C5DBDE916CCFA1200991C5E /* SpikeWave.h */,
+				5C5DBDEA16CCFA1200991C5E /* SpikeWaveView.h */,
+				5C5DBDEB16CCFA1200991C5E /* SpikeWaveView.m */,
 			);
 			name = "spike-visualization";
 			path = "../../spike-visualization";
 			sourceTree = "<group>";
 		};
-		5C732C9513A991AB0012B28D /* generated */ = {
+		5C5DBDF316CCFA2D00991C5E /* accessory classes */ = {
 			isa = PBXGroup;
 			children = (
-				5C732C9613A992BD0012B28D /* ctl_message.pb.cc */,
-				5C732C9713A992BD0012B28D /* ctl_message.pb.h */,
-				5C732C9813A992BD0012B28D /* spike_wave.pb.cc */,
-				5C732C9913A992BD0012B28D /* spike_wave.pb.h */,
-			);
-			name = generated;
-			sourceTree = "<group>";
-		};
-		5C732C9C13A995F50012B28D /* accessory classes */ = {
-			isa = PBXGroup;
-			children = (
-				5CBED01A13AFCE3F00CEEB19 /* cocoa_gl_text */,
-				5C6448AB13A946D50056AA53 /* CinderStringRenderer.cpp */,
-				5C6448AC13A946D50056AA53 /* CinderStringRenderer.h */,
+				5C5DBDF416CCFA3F00991C5E /* cocoa_gl_text */,
 			);
 			name = "accessory classes";
 			sourceTree = "<group>";
 		};
-		5CBED01A13AFCE3F00CEEB19 /* cocoa_gl_text */ = {
+		5C5DBDF416CCFA3F00991C5E /* cocoa_gl_text */ = {
 			isa = PBXGroup;
 			children = (
-				5CBED01B13AFCE3F00CEEB19 /* CocoaGLString.h */,
-				5CBED01C13AFCE3F00CEEB19 /* CocoaGLString.mm */,
-				5CBED01D13AFCE3F00CEEB19 /* CocoaGLStringRenderer.mm */,
-				5CBED01E13AFCE3F00CEEB19 /* CocoaGLStringRenderer.h */,
+				5C5DBDF516CCFA3F00991C5E /* CocoaGLString.h */,
+				5C5DBDF616CCFA3F00991C5E /* CocoaGLString.mm */,
+				5C5DBDF716CCFA3F00991C5E /* CocoaGLStringRenderer.h */,
+				5C5DBDF816CCFA3F00991C5E /* CocoaGLStringRenderer.mm */,
 			);
 			name = cocoa_gl_text;
 			path = ../../cocoa_gl_text;
 			sourceTree = "<group>";
 		};
-		5CBED02913AFCEC500CEEB19 /* CocoaGLText */ = {
+		5C5DBE0016CCFCDB00991C5E /* generated */ = {
 			isa = PBXGroup;
 			children = (
-				5CBED02A13AFCEC500CEEB19 /* Supporting Files */,
+				5C5DBE0116CCFCEC00991C5E /* ctl_message.pb.cc */,
+				5C5DBE0216CCFCEC00991C5E /* ctl_message.pb.h */,
+				5C5DBE0316CCFCEC00991C5E /* spike_wave.pb.cc */,
+				5C5DBE0416CCFCEC00991C5E /* spike_wave.pb.h */,
 			);
-			path = CocoaGLText;
-			sourceTree = "<group>";
-		};
-		5CBED02A13AFCEC500CEEB19 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CBED02B13AFCEC500CEEB19 /* CocoaGLText-Info.plist */,
-				5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */,
-				5CBED02F13AFCEC500CEEB19 /* CocoaGLText-Prefix.pch */,
-			);
-			name = "Supporting Files";
+			name = generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5CBED02513AFCEC500CEEB19 /* CocoaGLText */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5CBED03013AFCEC500CEEB19 /* Build configuration list for PBXNativeTarget "CocoaGLText" */;
-			buildPhases = (
-				5CBED02213AFCEC500CEEB19 /* Sources */,
-				5CBED02313AFCEC500CEEB19 /* Frameworks */,
-				5CBED02413AFCEC500CEEB19 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CocoaGLText;
-			productName = CocoaGLText;
-			productReference = 5CBED02613AFCEC500CEEB19 /* CocoaGLText.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8D1107260486CEB800E47090 /* CinderSpikes */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderSpikes" */;
 			buildPhases = (
+				5C5DBDFF16CCFB0100991C5E /* ShellScript */,
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
@@ -363,43 +262,31 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				en,
-				English,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CinderSpikes */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* CinderSpikes */,
-				5C732C7713A98E5A0012B28D /* generate_protocol_buffers */,
-				5C732C8D13A991850012B28D /* All */,
-				5CBED02513AFCEC500CEEB19 /* CocoaGLText */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5CBED02413AFCEC500CEEB19 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CBED02E13AFCEC500CEEB19 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00CCAF15116A9FEE008396D5 /* CinderApp.icns in Resources */,
-				5CBED00213ABAD0E00CEEB19 /* ctl_message.proto in Resources */,
-				5CBED00313ABAD0E00CEEB19 /* spike_wave.proto in Resources */,
+				5C5DBDEC16CCFA1200991C5E /* ctl_message.proto in Resources */,
+				5C5DBDEE16CCFA1200991C5E /* spike_wave.proto in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5C732C7C13A98E620012B28D /* ShellScript */ = {
+		5C5DBDFF16CCFB0100991C5E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,144 +296,32 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "# shell script goes here\nPROTOROOT=${SRCROOT}/spike-visualization\nrm -f ${SRCROOT}/spike_wave.pb.*\nrm -f ${SRCROOT}/ctl_message.pb.*\n\n/usr/local/bin/protoc --proto_path=${PROTOROOT} --cpp_out=${SRCROOT} ${PROTOROOT}/spike_wave.proto\n/usr/local/bin/protoc --proto_path=${PROTOROOT} --cpp_out=${SRCROOT} ${PROTOROOT}/ctl_message.proto\nexit 0";
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nPROTOROOT=${SRCROOT}/spike-visualization\nrm -f ${SRCROOT}/spike_wave.pb.*\nrm -f ${SRCROOT}/ctl_message.pb.*\n\n/usr/local/bin/protoc --proto_path=${PROTOROOT} --cpp_out=${SRCROOT} ${PROTOROOT}/spike_wave.proto\n/usr/local/bin/protoc --proto_path=${PROTOROOT} --cpp_out=${SRCROOT} ${PROTOROOT}/ctl_message.proto\nexit 0\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5CBED02213AFCEC500CEEB19 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CBED03313AFCECD00CEEB19 /* CocoaGLString.mm in Sources */,
-				5CBED03413AFCED100CEEB19 /* CocoaGLStringRenderer.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				00BAE65A0E7ED9C10018A608 /* CinderSpikesApp.cpp in Sources */,
-				5C6448A713A93E080056AA53 /* GLStringRenderer.cpp in Sources */,
-				5C6448A813A93E080056AA53 /* SpikeRenderer.cpp in Sources */,
-				5C6448A913A93E080056AA53 /* SpikeWave.cpp in Sources */,
-				5C6448AD13A946D50056AA53 /* CinderStringRenderer.cpp in Sources */,
-				5C732C9A13A992BD0012B28D /* ctl_message.pb.cc in Sources */,
-				5C732C9B13A992BD0012B28D /* spike_wave.pb.cc in Sources */,
-				5CBECFF813ABA7F600CEEB19 /* SpikeChannelController.cpp in Sources */,
-				5CBED03C13AFD0C500CEEB19 /* CocoaGLString.mm in Sources */,
-				5CBED03D13AFD0C500CEEB19 /* CocoaGLStringRenderer.mm in Sources */,
+				5C5DBDED16CCFA1200991C5E /* GLStringRenderer.cpp in Sources */,
+				5C5DBDEF16CCFA1200991C5E /* SpikeChannelController.cpp in Sources */,
+				5C5DBDF016CCFA1200991C5E /* SpikeRenderer.cpp in Sources */,
+				5C5DBDF116CCFA1200991C5E /* SpikeWave.cpp in Sources */,
+				5C5DBDF216CCFA1200991C5E /* SpikeWaveView.m in Sources */,
+				5C5DBDF916CCFA3F00991C5E /* CocoaGLString.mm in Sources */,
+				5C5DBDFA16CCFA3F00991C5E /* CocoaGLStringRenderer.mm in Sources */,
+				5C5DBE0516CCFCEC00991C5E /* ctl_message.pb.cc in Sources */,
+				5C5DBE0616CCFCEC00991C5E /* spike_wave.pb.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		5C732C9213A9918B0012B28D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C732C7713A98E5A0012B28D /* generate_protocol_buffers */;
-			targetProxy = 5C732C9113A9918B0012B28D /* PBXContainerItemProxy */;
-		};
-		5C732C9413A9918F0012B28D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8D1107260486CEB800E47090 /* CinderSpikes */;
-			targetProxy = 5C732C9313A9918F0012B28D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		5CBED02C13AFCEC500CEEB19 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5CBED02D13AFCEC500CEEB19 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		5C732C7813A98E5A0012B28D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5C732C7913A98E5A0012B28D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5C732C8F13A991850012B28D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5C732C9013A991850012B28D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5CBED03113AFCEC500CEEB19 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaGLText/CocoaGLText-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "CocoaGLText/CocoaGLText-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				VALID_ARCHS = i386;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5CBED03213AFCEC500CEEB19 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CocoaGLText/CocoaGLText-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				INFOPLIST_FILE = "CocoaGLText/CocoaGLText-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				VALID_ARCHS = i386;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -555,25 +330,28 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
-				GCC_INPUT_FILETYPE = automatic;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = CinderSpikes_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
-					"-lzmq",
 					"-lprotobuf",
-					"\"../../../../external/cinder_0.8.2_mac/lib/libcinder_d.a\"",
-					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_system.a\"",
+					"-lzmq",
+					"\"$(CINDER_PATH)/lib/libcinder_d.a\"",
+					"-lcurl",
 				);
 				PRODUCT_NAME = CinderSpikes;
+				SDKROOT = macosx10.7;
+				SYMROOT = ./build;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -587,27 +365,29 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
-				GCC_INPUT_FILETYPE = automatic;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = CinderSpikes_Prefix.pch;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				HEADER_SEARCH_PATHS = /usr/local/include;
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					/usr/local/include,
+				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = (
-					"-lzmq",
+					"\"$(CINDER_PATH)/lib/libcinder.a\"",
+					"-lcurl",
 					"-lprotobuf",
-					"\"../../../../external/cinder_0.8.2_mac/lib/libcinder.a\"",
-					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_system.a\"",
-					"\"../../../../external/cinder_0.8.2_mac/lib/macosx/libboost_filesystem.a\"",
+					"-lzmq",
 				);
 				PRODUCT_NAME = CinderSpikes;
+				SDKROOT = macosx10.7;
 				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -616,14 +396,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				CINDER_PATH = ../../../../external/cinder_0.8.2_mac;
-				GCC_VERSION = 4.2;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../external/cinder_0.8.4_mac;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
@@ -634,14 +413,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
-				CINDER_PATH = ../../../../external/cinder_0.8.2_mac;
-				GCC_VERSION = 4.2;
+				ARCHS = i386;
+				CINDER_PATH = ../../../../external/cinder_0.8.4_mac;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
@@ -651,32 +429,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C732C7A13A98E5A0012B28D /* Build configuration list for PBXAggregateTarget "generate_protocol_buffers" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C732C7813A98E5A0012B28D /* Debug */,
-				5C732C7913A98E5A0012B28D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C732C8E13A991850012B28D /* Build configuration list for PBXAggregateTarget "All" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C732C8F13A991850012B28D /* Debug */,
-				5C732C9013A991850012B28D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5CBED03013AFCEC500CEEB19 /* Build configuration list for PBXNativeTarget "CocoaGLText" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5CBED03113AFCEC500CEEB19 /* Debug */,
-				5CBED03213AFCEC500CEEB19 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "CinderSpikes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

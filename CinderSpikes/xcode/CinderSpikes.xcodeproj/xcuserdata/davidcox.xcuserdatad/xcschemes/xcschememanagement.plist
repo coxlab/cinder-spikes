@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>All.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
 		<key>CinderSpikes.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>CocoaGLText.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
-		</dict>
-		<key>generate_protocol_buffers.xcscheme</key>
+		<key>Generate Protocol Buffers.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -27,17 +17,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5C732C7713A98E5A0012B28D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5C732C8D13A991850012B28D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5CBED02513AFCEC500CEEB19</key>
+		<key>5C5DBDFB16CCFACA00991C5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,3 +1,4 @@
+#include <cstring>
 #include "cinder/app/AppBasic.h"
 #include "cinder/gl/gl.h"
 
@@ -256,7 +257,7 @@ void CinderSpikesApp::draw()
 
 void CinderSpikesApp::mouseDown( MouseEvent event )
 {
-
+    
     int start_channel = rows*cols*current_page;
     int end_channel = start_channel + rows*cols;
     if(end_channel > n_channels) end_channel = n_channels;
@@ -264,9 +265,25 @@ void CinderSpikesApp::mouseDown( MouseEvent event )
     float x = (float)event.getX();
     float y = getWindowHeight() - (float)event.getY();
     
+    bool shift_click = event.isShiftDown();
+    
     for(int ch = start_channel; ch < end_channel; ch++){
         SpikeChannelControllerPtr controller = spike_controllers[ch];
-        controller->mouseDown(x, y);
+        int adjust_mode = controller->mouseDown(x, y);
+        if (shift_click && adjust_mode){
+            for(int ch2 = start_channel; ch2 < end_channel; ch2++){
+                if(ch == ch2){
+                    continue;
+                }
+                if(adjust_mode == SP_AUTOTHRESH_UP_SELECT){
+                    spike_controllers[ch2]->autothresholdUp();
+                }
+                
+                if(adjust_mode == SP_AUTOTHRESH_DOWN_SELECT){
+                    spike_controllers[ch2]->autothresholdDown();
+                }
+            }
+        }
     }
 }
 
